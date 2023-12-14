@@ -7,9 +7,11 @@ import {HttpClientModule} from '@angular/common/http'
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListeFoyerComponent } from './Etudiant/views/liste-foyer/liste-foyer.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListeFoyerComponent
     
   ],
   imports: [

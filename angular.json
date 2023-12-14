@@ -30,8 +30,17 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
+             
+              "src/assets/ressourceEtudiant/js/theme.bundle.js",
 
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              
+             "src/assets/ressourceEtudiant/api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js" ,
+
+              "src/assets/ressourceEtudiant/js/theme.bundle.js",
+
+
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/ressourceEtudiant/js/vendor.bundle.js"
             ]
           },
           "configurations": {

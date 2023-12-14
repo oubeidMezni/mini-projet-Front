@@ -83,10 +83,7 @@ console.log(error)
    
     this.Listefoyer = this.Listefoyer.filter((foyer: any) => foyer.idFoyer !== foyerId);
   }
-  foyerToUpdate={
-    name:"",
-    capacite:"",  }
-
+ 
     edit(){
       if(this.updateForm.valid){
         this.foyerservice.updatefoyerr(this.updateForm.value).subscribe({
@@ -123,10 +120,7 @@ console.log(error)
       }
         }
 
-        updatefoyer(){
-          this.foyerservice.updatefoyerr(this.foyerToUpdate).subscribe()
-
-        }
+      
         searchForm = new FormGroup({
           searchQuery: new FormControl('')
         });

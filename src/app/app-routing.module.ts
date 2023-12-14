@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DahComponent } from './dashboard/dah/dah.component';
 import { AddfoyerComponent } from './dashboard/addfoyer/addfoyer.component';
 import { ListefoyerComponent } from './dashboard/listefoyer/listefoyer.component';
+import { LayoutEtudiantComponent } from './Etudiant/etudiant/layoutErudiant/layout-etudiant/layout-etudiant.component';
 
 const routes: Routes = [
   {
@@ -17,11 +18,16 @@ const routes: Routes = [
     ],
   },
   {
-    path:"addfoyer", component: AddfoyerComponent
-  },
-  {
-    path:"listefoyer",component:ListefoyerComponent
-  },
+    path: 'etudiant',
+    
+        loadChildren: () =>
+          import('./Etudiant/etudiant/etudiant.module').then((e) => e.EtudiantModule),
+      },
+  
+  
+
+
+ 
 ];
 
 @NgModule({

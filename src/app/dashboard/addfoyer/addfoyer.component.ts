@@ -12,7 +12,7 @@ export class AddfoyerComponent implements OnInit {
   Listefoyer: any = {};
   nouveauFoyer: { nomFoyer?: string, capaciteFoyer?: number } = {};
   monFormulaire: FormGroup;
-  formSubmitted = false; // Ajouter un drapeau pour indiquer si le formulaire a été soumis
+  formSubmitted = false; // naAjouti un drapeau pour indiquer si le formulaire a été soumis
 
   constructor(
     private foyerservice: AddfoyerService,
@@ -31,7 +31,7 @@ export class AddfoyerComponent implements OnInit {
   }
 
   register() {
-    this.formSubmitted = true; // Marquer le formulaire comme soumis
+    this.formSubmitted = true; 
     if (this.monFormulaire.valid) {
       this.foyerservice.addfoyer(this.monFormulaire.value).subscribe(
         (resp) => {
